@@ -1,0 +1,42 @@
+{
+  "name": "fitai-companion",
+  "version": "1.0.0",
+  "description": "AI-powered comprehensive fitness and health transformation companion app",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:mobile",
+    "start:mobile": "cd mobile && expo start",
+    "start:web": "cd web && npm run dev",
+    "start:backend": "cd backend && npm run dev",
+    "install:all": "npm install && cd mobile && npm install && cd ../web && npm install && cd ../backend && npm install",
+    "build:mobile": "cd mobile && expo build",
+    "build:web": "cd web && npm run build",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "fitness",
+    "health",
+    "AI",
+    "workout",
+    "nutrition",
+    "react-native",
+    "expo",
+    "cross-platform"
+  ],
+  "author": "FitAI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.8",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.2.2"
+  }
+}
